@@ -1,0 +1,343 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color:#f5f5f5;
+}
+
+body {
+  background-color:black;
+  margin:0;
+}
+
+.navBar{
+    background-color:rgb(0, 0, 0);
+    border-right:1px solid rgba(66, 59, 59,0.6);
+    height:100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    width:10%;
+    z-index: 0;
+    padding: 8px 12px 20px 12px;
+    min-width:220px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .navBar .logo{
+        height:5rem;
+        display:flex;
+        align-items:center;
+        margin:10px;
+    }
+
+        .navBar .logo img{
+            height: 2.2rem;
+        }
+    .navBar ul{
+        height: 75%;
+        min-height: 30rem;
+    }
+
+        .navBar ul li{
+            height:2.9rem;
+            display:flex;
+            margin-top:10px;
+            border-radius: 13px;
+
+
+            align-items:center;
+            cursor: pointer;
+            padding-left: 10px;
+            transition: all 0.4s ease;
+        }
+
+        .navBar ul li:hover{
+            background-color: rgba(255, 255, 255,0.2);
+        }
+
+            .navBar ul li i {
+                font-size: 16pt;
+            }
+
+            .navBar ul li p {
+                font-size: 16px;
+                margin-left: 15px;
+                font-weight: 400;
+                font-family: 'Segoe UI';
+               
+            }
+        .user img{
+            border-radius:50%;
+            width:1.4rem;
+        }
+    
+    .navBar .moreConfigs{
+        height: 8rem;
+
+    }
+        .moreConfigs .button{
+            height: 2.9rem;
+            border-radius: 13px;
+            display: flex;
+            margin-top:10px;
+            cursor: pointer;
+            padding-left: 10px;
+            align-items: center;
+            transition: all 0.4s ease-in;
+        }
+
+        .moreConfigs .button:hover{
+            background-color: rgba(255, 255, 255,0.2);
+        }
+
+            .button p{
+                font-size: 12pt;
+                margin-left: 15px;
+                font-weight: 400;
+                font-family: 'Segoe UI';
+            }
+
+            .button i{
+                font-size: 16pt;
+            }
+
+
+
+main{
+    display: flex;
+    margin-left:246px;
+    
+    padding: 22px 0 ;
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+.content .center{
+    margin-top: 16px;
+    width: 40%;
+    min-width: 40em;
+    height: 100vh;
+}
+    .stories{
+        display: flex;
+        width: 97%;
+        
+        height: auto;
+        position: relative;
+        padding: 8px 0;
+        
+        
+    }
+    .stories ul{
+        overflow:hidden;
+        text-decoration: none;
+        color:white;
+        display: flex;
+        gap:15px;
+        justify-content: space-between;
+    }
+
+    .stories ul li{
+        list-style: none ;
+    }
+
+
+
+    .stories .users-stories {
+       
+    }
+            .users-stories img{
+                width: 56px;
+                height: 56px;
+                background: linear-gradient(white, white) padding-box, linear-gradient(45deg, rgb(255,230,0),rgb(255,0,128) 80%) border-box;
+                border: 4px solid transparent; 
+                border-radius: 50%;
+            }
+
+
+            
+
+
+        .users-stories p{
+            font-size: 8pt;
+            text-align: center;
+        }
+
+    .stories #stories_scrollR{
+        width: 30px;
+        height: 30px;
+        transform: translateY(55%);
+        transform: translatez(50%);
+        border-radius:50% ;
+        right: 10px;
+        font-size: 14pt;
+        color: red;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        cursor: pointer;
+        
+    }
+
+    .stories #stories_scrollL{
+        width: 30px;
+        height: 30px;
+        display: none;
+        transform: translateY(55%);
+        transform: translatez(50%);
+        border-radius:50% ;
+        left: 10px;
+        font-size: 14pt;
+        color: red;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        cursor: pointer;
+        
+    }
+
+
+
+.center .post{
+    height: 100%;
+    width:70%;
+    margin:20px auto;
+    padding: 30px 0;
+}
+
+    .post .postCard::after{
+        content: "";
+        width:100%;
+        height:1px;
+        background-color: rgb(38,38 , 38);
+    }
+    .post .postCard{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+        .postCard .perfilName{
+            display: flex;
+            color:white;
+            align-items: center;
+            gap:5px;
+            font-size:12pt ;
+            }
+            .perfilName img{
+                width:35px;
+                background: linear-gradient(white, white) padding-box, linear-gradient(45deg, rgb(255,230,0),rgb(255,0,128) 80%) border-box;
+                border: 3px solid transparent; 
+                border-radius:50%;
+            }
+
+            .perfilName .name{
+                display: inline;
+            }
+
+            .perfilName div{
+                background-color:#a8a8a8;
+                width:3px;
+                display: block;
+                height: 3px;
+                border-radius: 50%;
+            }
+
+            .perfilName time{
+                color:#a8a8a8;
+            }
+
+            .perfilName i{
+                font-size: 12pt;
+                cursor: pointer;
+                margin-left:auto;
+            }
+        .postCard .icons{
+            font-size: 17pt;
+            display: flex;
+            gap: 20px;
+        }
+            .icons .bookmark{
+                margin-left: auto;
+            }
+            .icons div{
+                cursor: pointer;
+            }
+        .postCard .mainContent{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .postCard .likedByOthers{
+            font-size: 10pt;
+        }
+
+        .postCard .comments{
+            font-size: 10pt;
+        }
+        .postCard .commentsButton{
+            
+            font-size: 10pt;
+        }
+            .commentsButton p{
+                color:#a8a8a8
+            }
+
+            .commentsButton input{
+                background-color: transparent;
+                border: none;
+                margin-top: 5px;
+                font-size: 14px;
+                color:#a8a8a8;
+            }
+    
+.content .sugestionsContainer{
+    height: 100vh;
+    padding-left: 64px;
+    margin-right: 10px;
+
+    
+}
+
+    .sugestionsContainer .sugestions{
+        margin-top: 36px;
+        width: 100%;
+        width:319px;
+    }
+
+        .sugestions .userProfile{
+            display: flex;
+            align-items: center;
+            gap:10px;
+            
+            
+        }
+            .infos{
+                width:60%;
+            }
+            .userProfile p{
+                font-size: 14px;;
+            }
+
+            .userProfile img{
+                width:44px;
+                height: 44px;
+                border-radius: 50%;
+            }
+
+        .sugestions .othersProfiles{
+            margin: 20px 0 ;
+        }
+
+            .othersProfiles ul{
+                list-style: none;
+                padding: 15px 0;
+                display: flex;
+                gap: 15px;
+                flex-direction: column;
+            }
+

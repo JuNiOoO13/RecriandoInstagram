@@ -1,0 +1,1 @@
+Esse é um projeto voltado para o front-end em que eu recrio a home page do instagram com intuito de aplicar os conhecimentos, e melhora em css/html e js
